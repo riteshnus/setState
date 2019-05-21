@@ -102,7 +102,7 @@ class ChildOfHomeBrother extends Component {
         <h5>After that I'm rendering my own state and as you see changes to props that come from my father do not trigger my re-rendering anymore</h5>
         <h3 className="mt-5">Why does this happen?</h3>
         <h5>Because in the render() method you're calling the state and not the props so render() doesn't know he needs to trigger a re-rendering of the DOM</h5>
-        <h5>As a result, component is not re-rendered and ComponentDidMount that only runs once each time the component is rendered, is not invoked anymore.</h5>
+        <h5>As a result, the component is not re-rendered and ComponentDidMount that only runs once each time the component is rendered, is not invoked anymore.</h5>
         <hr />
       </div>
     )
